@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <title>QuimicaLab</title>
+</head>
+
+<body>
+    <div id="telaInicial" class="secao">
+        <h1>QuimicaLab</h1>
+        <button id="iniciar">Começar a Estudar</button>
+    </div>
+
+    <div id="Opcoes" class="secao">
+        <button id="tabelaPeriodica">Tabela Periódica</button>
+        <button id="resumos">Resumos</button>
+        <button id="balanceador">Balanceador de Equações</button>
+        <button id="ia">Assistente de Química</button>
+        <button id="pagEspecial">Aperte Aqui Primeiro</button>
+
+    </div>
+
+    <div id="tabelaPeriodicaDiv" class="secao">
+        <button id="voltarTabela">Voltar</button>
+        <h1>Tabela Periódica</h1>
+        <div id="tabela-grid"></div>
+    </div>
+
+    <div id="resumosDiv" class="secao">
+        <button id="voltarResumo">Voltar</button>
+        <h2>Resumos de Química</h2>
+        <div id="listaAssuntos">
+            <h3>Escolha um assunto:</h3>
+            <div class="botao-assunto" data-assunto="regra-de-markovnikov">Regra de Markovnikov</div>
+            <div class="botao-assunto" data-assunto="nox">Número de Oxidação (Nox)</div>
+            <div class="botao-assunto" data-assunto="oxido-reducao">Reações de Oxirredução</div>
+            <div class="botao-assunto" data-assunto="delta-nox">Variação de NOX (ΔNOX)</div>
+        </div>
+        <div id="conteudoResumo" style="display: none;"></div>
+    </div>
+
+    <div id="balanceadorDiv" class="secao">
+        <button id="voltarBalancear">Voltar</button>
+        <h2>Balanceador de Equações Químicas</h2>
+        <input type="text" id="equacao" placeholder="Digite a equação. Exemplo: H2+O2=H2O">
+        <button id="btnBalancear">Balancear</button>
+        <div id="resultado"></div>
+        <div class="aviso">
+            <strong>Limitações:</strong><br>
+            Esse algoritmo não balanceia equações com: <br>
+            - Parênteses <br>
+            - Números de dois ou mais dígitos na fórmula <br>
+            - 6 ou mais substâncias <br>
+            - Cargas ou íons <br>
+            - Coeficientes maiores que 30
+        </div>
+    </div>
+
+    <div id="iaDiv" class="secao">
+        <button id="voltarIa">Voltar</button>
+        <h2>Amor não ta pronto agora porque é muito dificil fazer do jeito que eu quero<br>
+        vai ser assim vc vai esolher assunto, quantidade de pergunta, dificuldade e quanto tempo vc quer para resonder cada questão<br>
+        ai eu mandaria pra uma IA ela ia formula as perguntas e as respostas e ia mostrar pra vc so que isso é muito dificl de fazer em tempo de compilação vo ir desenvolvendo durante o tempo que eu tiver quando tive pronto te aviso</h2>
+        <!-- Espaço pronto pra você colocar o conteúdo depois -->
+    </div>
+    <div id="pagEspecialDiv" class="secao">
+        <button id="voltarPag">Voltar</button>
+        <h2>Surpresa</h2>
+        <p>Fiz esse site pensando em você meu amor, quero que você saiba que você é extremamente importante pra mim<br>
+            eu te amo muito vc não tem ideia o quanto, quero muito que a gente de certo de verdade e tenha um futuro, esse site expressa so uma fração do meu amor por você princesa!!!!<br>
+            sinto saudades de vc, sinto medo de te perder, estar com vc é bom, é confortavel e quero ter milhares de memorias ao seu lado! eu te amo muito minha princesa espero que goste do site!<br><br>
+        com o tempo adciono mais funcionalidades.</p>
+    </div>
+
+    <script src="javaS.js"></script>
+</body>
+
+</html>
